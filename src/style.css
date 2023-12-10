@@ -46,12 +46,12 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: white;
+  background: aliceblue;
 }
 
 .button {
   display: block;
-  color: white;
+  color: aliceblue;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -62,8 +62,14 @@ header a {
   background-color: rgb(85, 133, 181);
   text-decoration: none;
 }
+
 .heading-margin {
   margin: 30px 0;
+}
+
+.heading-margin-h3 {
+  margin-top: 0;
+  color: #9ddcdc;
 }
 
 .grid {
@@ -116,10 +122,6 @@ main {
   margin: 30px 0;
 }
 
-.photos {
-  text-align: center;
-}
-
 .card-header.grid {
   grid-gap: 0;
 }
@@ -130,6 +132,10 @@ main {
 
 .card-footer {
   padding: 0 30px 30px;
+}
+
+.instagram-photos {
+  text-align: center;
 }
 
 footer {
@@ -145,4 +151,30 @@ footer {
 
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 2fr 2fr 2fr;
+}
+
+footer a {
+  color: aliceblue;
+}
+
+footer li {
+  list-style: none;
+  padding: 8px;
+}
+
+.name {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hawaii-hero,
+  .grid-2-columns,
+  .grid-3-columns,
+  .grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr;
+  }
+
+  .embed {
+    display: none;
+  }
 }
